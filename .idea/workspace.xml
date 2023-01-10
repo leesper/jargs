@@ -43,6 +43,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -72,6 +79,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs" />
       <recent name="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="tdd.leesper.jargs" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.AppTest">
