@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="eb02eb16-1e73-417b-827d-488c8d814231" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/BooleanOptionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/BooleanOptionParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/Args.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/Args.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/SingleValuedOptionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/SingleValuedOptionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/SingleValuedOptionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/SingleValuedOptionParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +90,8 @@
       <recent name="tdd.leesper.jargs" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BooleanOptionParserTest">
-    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SingleValuedOptionParserTest.shouldNotAcceptExtraArgumentForStringSingleValuedOption">
+    <configuration name="SingleValuedOptionParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -102,7 +104,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tdd.leesper.jargs.AppTest&quot;" />
+            <option value="&quot;tdd.leesper.jargs.SingleValuedOptionParserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -112,7 +114,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BooleanOptionParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SingleValuedOptionParserTest.shouldNotAcceptExtraArgumentForStringSingleValuedOption" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -125,7 +127,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tdd.leesper.jargs.BooleanOptionParserTest&quot;" />
+            <option value="&quot;tdd.leesper.jargs.SingleValuedOptionParserTest.shouldNotAcceptExtraArgumentForStringSingleValuedOption&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,7 +137,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BooleanOptionParserTest.shouldNotAcceptExtraArgumentsForBooleanOption" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SingleValuedOptionParserTest.shouldNotAcceptInsufficientArgumentForSingleValuedOption" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -148,7 +150,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tdd.leesper.jargs.BooleanOptionParserTest.shouldNotAcceptExtraArgumentsForBooleanOption&quot;" />
+            <option value="&quot;tdd.leesper.jargs.SingleValuedOptionParserTest.shouldNotAcceptInsufficientArgumentForSingleValuedOption&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,33 +160,59 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="jargs [createDirs]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SingleValuedOptionParserTest.shouldSetDefaultValueTo0ForIntOption" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="createDirs" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tdd.leesper.jargs.SingleValuedOptionParserTest.shouldSetDefaultValueTo0ForIntOption&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'tdd.leesper.jargs'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tdd.leesper.jargs.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BooleanOptionParserTest" />
-        <item itemvalue="Gradle.BooleanOptionParserTest.shouldNotAcceptExtraArgumentsForBooleanOption" />
-        <item itemvalue="Gradle.AppTest" />
-        <item itemvalue="Gradle.jargs [createDirs]" />
+        <item itemvalue="Gradle.SingleValuedOptionParserTest.shouldNotAcceptExtraArgumentForStringSingleValuedOption" />
+        <item itemvalue="Gradle.Tests in 'tdd.leesper.jargs'" />
+        <item itemvalue="Gradle.SingleValuedOptionParserTest" />
+        <item itemvalue="Gradle.SingleValuedOptionParserTest.shouldSetDefaultValueTo0ForIntOption" />
+        <item itemvalue="Gradle.SingleValuedOptionParserTest.shouldNotAcceptInsufficientArgumentForSingleValuedOption" />
       </list>
     </recent_temporary>
   </component>
