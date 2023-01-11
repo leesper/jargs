@@ -50,14 +50,7 @@ public class AppTest {
     }
 
     static record MultiOptions(@Option("l") boolean logging, @Option("p") int port, @Option("d") String directory) {}
-    // Sad path
-    //   TODO: - bool -l t / -l t f
-    //   TODO: - integer -p / -p 8080 8081
-    //   TODO: - string -d / -d /usr/logs /usr/vars
-    // Default
-    //   TODO: - bool : false
-    //   TODO: - integer : 0
-    //   TODO: - string : ""
+
 
 
     // -g this is a list -d 1 2 -3 5
