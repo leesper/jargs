@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.util.function.Function;
+
 import static java.util.Arrays.asList;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 import static tdd.leesper.jargs.BooleanOptionParserTest.option;
 
 public class SingleValuedOptionParserTest {
@@ -45,14 +46,25 @@ public class SingleValuedOptionParserTest {
         assertEquals("d", e.getOption());
     }
 
-    @Test
-    public void shouldSetDefaultValueTo0ForIntOption() {
-        assertEquals(0, new SingleValuedOptionParser<>(0, Integer::parseInt).parse(asList(), option("p")));
-    }
-
     // Default
     @Test
     public void shouldSetDefaultValueToEmptyStringForStringOption() {
         assertEquals("", new SingleValuedOptionParser<>("", String::valueOf).parse(asList(), option("d")));
+    }
+
+    @Test
+    public void shouldSetDefaultValueForSingleValuedOption() {
+        Function<String, Object> whatever = (it) -> null;
+        Object defaultValue = new Object();
+        assertSame(defaultValue, new SingleValuedOptionParser<>(defaultValue, whatever).parse(asList(), option("p")));
+    }
+
+    // happy path
+    @Test
+    public void shouldParseValueIfFlagPresent() {
+        Object parsed = new Object();
+        Function<String, Object> parse = (it) -> parsed;
+        Object whatever = new Object();
+        assertSame(parsed, new SingleValuedOptionParser<>(whatever, parse).parse(asList("-p", "8080"), option("p")));
     }
 }

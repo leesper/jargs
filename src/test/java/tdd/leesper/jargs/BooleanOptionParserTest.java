@@ -47,4 +47,10 @@ public class BooleanOptionParserTest {
     public void shouldSetDefaultValueToFalseIfOptionNotPresent() {
         assertFalse(new BooleanOptionParser().parse(asList(), option("l")));
     }
+
+    // Happy path
+    @Test
+    public void shouldSetValueToTrueIfOptionPresent() {
+        assertTrue(new BooleanOptionParser().parse(asList("-l"), option("l")));
+    }
 }

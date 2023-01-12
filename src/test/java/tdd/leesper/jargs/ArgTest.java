@@ -8,38 +8,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class AppTest {
+public class ArgTest {
     // -l -p 8080 -d /usr/logs
-    // Single option
-    @Test
-    public void shouldSetBooleanOptionToTrueIfFlagPresent() {
-        BooleanOption option = Args.parse(BooleanOption.class, "-l");
-        assertTrue(option.logging());
-    }
-
-    @Test
-    public void shouldSetBooleanOptionToFalseIfFlagNotPresent() {
-        BooleanOption option = Args.parse(BooleanOption.class);
-        assertFalse(option.logging());
-    }
-
-    static record BooleanOption(@Option("l") boolean logging) {}
-
-    @Test
-    public void shouldParseIntAsOptionValue() {
-        IntOption option = Args.parse(IntOption.class, "-p", "8080");
-        assertEquals(8080, option.port());
-    }
-
-    static record IntOption(@Option("p") int port) {}
-
-    @Test
-    public void shouldGetStringAsOptionValue() {
-        StringOption option = Args.parse(StringOption.class, "-d", "/usr/logs");
-        assertEquals("/usr/logs", option.directory());
-    }
-
-    static record StringOption(@Option("d") String directory) {}
 
     @Test
     public void shouldParseMultiOptions() {
