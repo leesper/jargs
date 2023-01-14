@@ -1,4 +1,4 @@
-package tdd.leesper.jargs;
+package tdd.leesper.jargs.exceptions;
 
 public class TooManyArgumentsException extends RuntimeException {
     private final String option;

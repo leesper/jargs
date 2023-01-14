@@ -1,5 +1,7 @@
 package tdd.leesper.jargs;
 
+import tdd.leesper.jargs.exceptions.TooManyArgumentsException;
+
 import java.util.List;
 
 class BooleanOptionParser implements OptionParser<Boolean> {

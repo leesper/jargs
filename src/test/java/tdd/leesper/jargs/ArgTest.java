@@ -5,6 +5,7 @@ package tdd.leesper.jargs;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import tdd.leesper.jargs.exceptions.IllegalOptionException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
