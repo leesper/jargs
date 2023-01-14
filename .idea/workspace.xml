@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb02eb16-1e73-417b-827d-488c8d814231" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/OptionParsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/SingleValuedOptionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/SingleValuedOptionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/Args.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/Args.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/BooleanOptionParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/SingleValuedOptionParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/BooleanOptionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/BooleanOptionParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/SingleValuedOptionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/OptionParsersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +88,17 @@
       <recent name="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs" />
       <recent name="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs" />
     </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="tdd.leesper.jargs.SingleValuedOptionParser" />
+    </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="tdd.leesper.jargs" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="tdd.leesper.jargs.exceptions" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'tdd.leesper.jargs'">
+  <component name="RunManager" selected="Gradle.Tests in 'jargs.test'">
     <configuration name="ArgTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,7 +145,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BooleanOptionParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OptionParsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +158,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tdd.leesper.jargs.BooleanOptionParserTest&quot;" />
+            <option value="&quot;tdd.leesper.jargs.OptionParsersTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +168,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SingleValuedOptionParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'jargs.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -169,8 +180,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tdd.leesper.jargs.SingleValuedOptionParserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'jargs.test'" />
+        <item itemvalue="Gradle.OptionParsersTest" />
         <item itemvalue="Gradle.Tests in 'tdd.leesper.jargs'" />
         <item itemvalue="Gradle.ArgTest.shouldThrowIllegalOptionExceptionIfAnnotationNotPresent" />
         <item itemvalue="Gradle.ArgTest" />
-        <item itemvalue="Gradle.SingleValuedOptionParserTest" />
-        <item itemvalue="Gradle.BooleanOptionParserTest" />
       </list>
     </recent_temporary>
   </component>
