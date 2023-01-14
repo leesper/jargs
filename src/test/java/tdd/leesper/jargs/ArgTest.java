@@ -21,7 +21,14 @@ public class ArgTest {
 
     static record MultiOptions(@Option("l") boolean logging, @Option("p") int port, @Option("d") String directory) {}
 
+    @Test
+    public void shouldThrowIllegalOptionExceptionIfAnnotationNotPresent() {
+        IllegalOptionException e = assertThrows(IllegalOptionException.class, () -> Args.parse(OptionsWithoutAnnotation.class, "-l", "-p", "8080", "-d", "/usr/logs"));
 
+        assertEquals("port", e.getParameter());
+    }
+
+    static record OptionsWithoutAnnotation(@Option("l") boolean logging, int port, @Option("d") String directory) {}
 
     // -g this is a list -d 1 2 -3 5
     @Test
