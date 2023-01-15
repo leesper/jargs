@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eb02eb16-1e73-417b-827d-488c8d814231" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/Args.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/Args.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/OptionParsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/OptionParsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/ArgTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/ArgTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/OptionParsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/leesper/jargs/OptionParsersTest.java" afterDir="false" />
@@ -70,6 +71,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "/Users/likejun/jargs/src/main/java/tdd/leesper/jargs",
     "last_opened_file_path": "/Users/likejun/jargs/src/test/java/tdd/leesper/jargs",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
@@ -79,6 +81,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="tdd.leesper.jargs.exceptions" />
       <recent name="tdd.leesper.jargs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -96,6 +99,29 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Tests in 'jargs.test'">
+    <configuration name="ArgTest.should_example_2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tdd.leesper.jargs.ArgTest.should_example_2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ListOptionParserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -110,29 +136,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tdd.leesper.jargs.OptionParsersTest$ListOptionParserTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ListOptionParserTest.shouldParseListValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tdd.leesper.jargs.OptionParsersTest$ListOptionParserTest.shouldParseListValue&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -165,7 +168,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ListOptionParserTest.shouldUseEmptyArrayAsDefaultValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OptionParsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -178,7 +181,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tdd.leesper.jargs.OptionParsersTest$ListOptionParserTest.shouldUseEmptyArrayAsDefaultValue&quot;" />
+            <option value="&quot;tdd.leesper.jargs.OptionParsersTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,10 +215,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'jargs.test'" />
+        <item itemvalue="Gradle.OptionParsersTest" />
+        <item itemvalue="Gradle.ArgTest.should_example_2" />
         <item itemvalue="Gradle.ListOptionParserTest" />
         <item itemvalue="Gradle.ListOptionParserTest.shouldThrowExceptionIfValueParserCantParseValue" />
-        <item itemvalue="Gradle.ListOptionParserTest.shouldUseEmptyArrayAsDefaultValue" />
-        <item itemvalue="Gradle.ListOptionParserTest.shouldParseListValue" />
       </list>
     </recent_temporary>
   </component>
@@ -240,5 +243,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tdd/leesper/jargs/Args.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

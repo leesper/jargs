@@ -35,16 +35,13 @@ class OptionParsers {
     }
 
     private static Optional<List<String>> values(List<String> arguments, Option option, int expectedSize) {
-        int index = arguments.indexOf("-" + option.value());
+        return values(arguments, option).map(it -> checkSize(option, expectedSize, it));
+    }
 
-        if (index == -1) return Optional.empty();
-
-        List<String> values = values(arguments, index);
-
+    private static List<String> checkSize(Option option, int expectedSize, List<String> values) {
         if (values.size() < expectedSize) throw new InsufficientArgumentException(option.value());
         if (values.size() > expectedSize) throw new TooManyArgumentsException(option.value());
-
-        return Optional.of(values);
+        return values;
     }
 
     private static <T> T parseValue(Option option, String value, Function<String, T> valueParser) {
@@ -58,7 +55,7 @@ class OptionParsers {
     private static List<String> values(List<String> arguments, int index) {
 
         return arguments.subList(index + 1, IntStream.range(index + 1, arguments.size())
-                .filter(it -> arguments.get(it).startsWith("-"))
+                .filter(it -> arguments.get(it).matches("^-[a-zA-Z-]+$"))
                 .findFirst().orElse(arguments.size()));
     }
 
