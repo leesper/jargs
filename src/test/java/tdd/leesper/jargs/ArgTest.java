@@ -31,7 +31,8 @@ public class ArgTest {
 
     static record OptionsWithoutAnnotation(@Option("l") boolean logging, int port, @Option("d") String directory) {}
 
-    // -g this is a list -d 1 2 -3 5
+    //TODO: -g this is a list -d 1 2 -3 5
+
     @Test
     @Disabled
     public void should_example_2() {

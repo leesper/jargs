@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import tdd.leesper.jargs.exceptions.IllegalValueException;
 import tdd.leesper.jargs.exceptions.InsufficientArgumentException;
 import tdd.leesper.jargs.exceptions.TooManyArgumentsException;
 
@@ -122,6 +123,36 @@ public class OptionParsersTest {
         @Test
         public void shouldSetValueToTrueIfOptionPresent() {
             assertTrue(OptionParsers.bool().parse(asList("-l"), option("l")));
+        }
+    }
+
+    @Nested
+    class ListOptionParserTest {
+        @Test
+        public void shouldParseListValue() {
+            assertArrayEquals(new String[]{"this", "is"},
+                    OptionParsers.list(String[]::new, String::valueOf)
+                            .parse(asList("-g", "this", "is"), option("g")));
+        }
+
+        @Test
+        public void shouldUseEmptyArrayAsDefaultValue() {
+            String[] value = OptionParsers.list(String[]::new, String::valueOf)
+                    .parse(asList(), option("g"));
+            assertEquals(0, value.length);
+        }
+
+        @Test
+        public void shouldThrowExceptionIfValueParserCantParseValue() {
+            Function<String, String> parser = (it) -> {
+                throw new RuntimeException();
+            };
+
+            IllegalValueException e = assertThrows(IllegalValueException.class,
+                    () -> OptionParsers.list(String[]::new, parser)
+                            .parse(asList("-g", "this", "is"), option("g")));
+            assertEquals("g", e.getOption());
+            assertEquals("this", e.getValue());
         }
     }
 }
